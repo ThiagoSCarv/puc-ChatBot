@@ -56,30 +56,39 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Use ls. Ex.: ls -la mostra arquivos ocultos e detalhes. \n");
+                            break;
                         }
                         case "2": {
                             System.out.println("Use cd <diretório>. Ex.: cd .. volta uma pasta; cd ~ vai para a home. \n");
+                            break;
                         }
                         case "3": {
                             System.out.println("O comando pwd mostra o caminho da pasta atual. \n");
+                            break;
                         }
                         case "4": {
                             System.out.println("Use mkdir nome. Para hierarquias: mkdir -p a/b/c. \n");
+                            break;
                         }
                         case "5": {
                             System.out.println("Arquivos: rm arquivo. Pastas: rm -r pasta. Muito cuidado com rm -rf. \n");
+                            break;
                         }
                         case "6": {
                             System.out.println("Use mv origem destino. Ex.: mv a.txt b.txt renomeia. \n");
+                            break;
                         }
                         case "7": {
                             System.out.println("Use cp origem destino. Para pastas: cp -r pasta destino. \n");
+                            break;
                         }
                         case "8": {
                             System.out.println("Use ln -s alvo atalho. \n");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -105,18 +114,23 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Use cat arquivo. Para arquivos grandes, prefira less. \n");
+                            break;
                         }
                         case "2": {
                             System.out.println("Use less arquivo. Navegue com setas, busque com /texto, saia com q. \n");
+                            break;
                         }
                         case "3": {
                             System.out.println("Use nano arquivo (simples) ou vim arquivo (mais avançado). \n");
+                            break;
                         }
                         case "4": {
                             System.out.println("Use sed. Ex.: sed 's/antigo/novo/g' arquivo. \n");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -139,12 +153,15 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Use grep \"palavra\" arquivo.\n Útil: -i ignora maiúsculas/minúsculas, -r busca recursiva.");
+                            break;
                         }
                         case "2": {
                             System.out.println("Use find . -name \"*.txt\". Pode filtrar por -type f (arquivo) ou -type d (pasta).");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -171,24 +188,31 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Use chmod. Ex.: chmod +x script.sh dá permissão de execução. \n");
+                            break;
                         }
                         case "2": {
                             System.out.println("r = leitura, w = escrita, x = execução.\\n Ex.: 754 → dono rwx, grupo r-x, outros r--. \n");
+                            break;
                         }
                         case "3": {
                             System.out.println("Use chmod -R 755 pasta/. \n");
+                            break;
                         }
                         case "4": {
                             System.out.println("Use chown. Ex.: sudo chown usuario:grupo arquivo. \n");
+                            break;
                         }
                         case "5": {
                             System.out.println("Use sudo adduser nome. Para trocar senha: passwd. \n");
+                            break;
                         }
                         case "6": {
                             System.out.println("sudo executa comandos como administrador (root). \n");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -212,15 +236,20 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Debian/Ubuntu: sudo apt install pacote\\n Fedora: sudo dnf install pacote\\n Arch: sudo pacman -S pacote \n");
+                            break;
                         }
+
                         case "2": {
                             System.out.println("Use systemctl. Ex.: systemctl status nginx. \n");
+                            break;
                         }
                         case "3": {
                             System.out.println("Use journalctl -u nome.service. \n");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -249,12 +278,15 @@ public class Main {
                                     "2>&1 une erros com saída\n" +
                                     "\n" +
                                     "| (pipe) encadeia comandos");
+                            break;
                         }
                         case "2": {
                             System.out.println("Use awk. Ex.: awk '{print $1}' arquivo imprime a primeira coluna.");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
@@ -280,21 +312,27 @@ public class Main {
                     switch (opcao) {
                         case "1": {
                             System.out.println("Use ssh usuario@ip. \n");
+                            break;
                         }
                         case "2": {
                             System.out.println("Use scp arquivo usuario@ip:/destino.\n Ou rsync -avh origem destino. \n");
+                            break;
                         }
                         case "3": {
                             System.out.println("Use wget URL ou curl -LO URL. \n");
+                            break;
                         }
                         case "4": {
                             System.out.println("Use ip a. \n");
+                            break;
                         }
                         case "5": {
                             System.out.println("Use traceroute site.com ou tracepath site.com. \n");
+                            break;
                         }
                         default: {
                             System.out.println("Opção inválida! Tente Novamente");
+                            break;
                         }
                     }
                 }
